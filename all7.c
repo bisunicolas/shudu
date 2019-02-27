@@ -9,7 +9,7 @@
 /*   Updated: 2019/02/25 18:41:17 by zhli             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+有两个文件名字要改！
 #include <stdlib.h>
 
 int		ft_strlen(char *str)
@@ -22,13 +22,13 @@ int		ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(char *src) char etoile source
 {
-	char	*cpdup;
+	char	*dup;
 	int		i;
 
 	i = -1;
-	if (!(src && (cpdup = (char *)malloc(sizeof(char) * (ft_strlen(src) + 1)))))
+	if (!(src && (dup = (char *)malloc(sizeof(char) * (ft_strlen(src) + 1)))))
 		return (NULL);
 	while (src[++i])
 		cpdup[i] = src[i];
@@ -57,7 +57,7 @@ int	*ft_range(int min, int max)
 	if (min < max)
 	{
 		if (!(str = (int *)malloc(sizeof(int) * (max - min))))
-			return (NULL);
+			return (NULL); not null but 0;
 		i = 0;
 		while (min < max)
 		{
